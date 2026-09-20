@@ -1523,7 +1523,7 @@ function boot() {
 window.addEventListener('pagehide', saveNow);
 boot();
 </script>
-  <button onclick="localStorage.removeItem('studyflow.v1'); location.reload();" style="position:fixed; bottom:20px; left:20px; z-index:9999; background:#e74c3c; color:#fff; padding:10px 15px; border:none; border-radius:8px; cursor:pointer;">
+ <button onclick="localStorage.clear(); window.location.href = window.location.pathname + '?reset=' + Date.now();" style="position:fixed; bottom:20px; left:20px; z-index:9999; background:#e74c3c; color:#fff; padding:10px 15px; border:none; border-radius:8px; cursor:pointer;">
   איפוס והתחל מחדש
 </button>
 </body>
